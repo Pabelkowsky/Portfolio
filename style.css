@@ -1,0 +1,785 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Open+Sans:wght@300;400;1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;  
+    scroll-behavior: smooth; 
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: rgb(244, 228, 246);
+    --bg-color: rgb(77, 10, 148);
+}
+
+body{
+background-color: var(--bg-color);
+font-family: 'Maven Pro', sans-serif;
+color: var(--main-color);
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    color: white;
+}
+
+
+/*header */
+
+
+
+header .nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    background-color: rgb(28, 19, 49);
+    opacity: 0.9;
+}
+
+header .nav-container{
+    width: 60%;
+    max-width: 2000px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+font-weight: 700;
+font-size: 30px;
+}
+
+header .navbar{
+    width: 100%;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    left: 0;
+    top: 60px;
+    background-color: rgb(25, 8, 55);
+    opacity: 0.9;
+}
+
+header ul a{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+header ul a:hover{
+    background-color: rgb(25, 6, 63);
+}
+
+
+header .burger{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   height: 40px;
+   width: 40px;
+   background: transparent;
+   border: none;
+   cursor: pointer;
+}
+
+header .line{
+    background-color: white;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+}
+
+header .content{
+width: 100%;
+max-width: 2000px;
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+header .text-box-01{
+margin-top: 50px;
+width: 55%;
+}
+
+header .title{
+width: max-content;
+margin: auto;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 700;
+    background: linear-gradient(to top, rgb(77, 10, 148) 20px , white);
+    -webkit-background-clip: text;
+    background-clip: none;
+    color: transparent;
+    opacity: 0.5;
+    transform: translate(0, 35px);
+    font-family: 'Maven Pro', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+padding: 0 10px;
+}
+
+header h2{
+    text-align: center;
+    font-size: 70px;    
+}
+
+header span{
+    width: max-content;
+    display: block;
+    margin: auto;
+    font-size: 40px;
+}
+
+header p{
+padding: 20px 20px;
+font-size: 20px;
+}
+
+header .contact{
+    border: none;
+    width: 130px;
+    height: 50px;
+    background-color: rgb(116, 21, 219);
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--main-color);
+    transition: .5s ease-in-out;
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+header .contact:hover{
+    scale: 110%;
+}
+
+header .animation{
+    width: 45%;  
+}
+
+
+
+
+
+
+#about{
+    margin-top: 90px;
+}
+
+#about .title{
+margin: auto;
+width: max-content;
+}
+
+#about h3{
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+    background: linear-gradient(to top, rgb(77, 10, 148) 20px , white);
+    -webkit-background-clip: text;
+    background-clip: none;
+    color: transparent;
+    opacity: 0.5;
+    transform: translate(0, 35px);
+    font-family: 'Maven Pro', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+#about h4{
+    text-align: center;
+    font-size: 60px;
+}
+
+#about .line{
+    width: 20%;
+    height: 3px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: var(--main-color);
+}
+
+#about .container{
+width: 100%;
+max-width: 2000px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 50px auto;
+}
+
+#about .animation{
+    width: 45%;
+}
+
+#about .text-box-02{
+    width: 45%;
+}
+
+#about h5{
+    text-align: center;
+    font-size: 50px;
+}
+
+#about p{
+    font-size: 25px;
+    padding: 20px 30px;
+}
+
+
+
+
+
+
+
+
+#skills h3{
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+    background: linear-gradient(to top, rgb(77, 10, 148) 20px , white);
+    -webkit-background-clip: text;
+    background-clip: none;
+    color: transparent;
+    opacity: 0.5;
+    transform: translate(0, 30px);
+    font-family: 'Maven Pro', sans-serif;
+   font-family: 'Open Sans', sans-serif;
+   font-family: 'Roboto', sans-serif;
+}
+
+#skills h4{
+    text-align: center;
+    font-size: 60px;
+}
+
+#skills .line{
+    width: 20%;
+    height: 3px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: var(--main-color);
+}
+
+#skills .container{
+width: 100%;
+max-width: 2000px;
+margin: 50px auto;
+display: flex;
+text-align: center;
+justify-content: center;
+gap: 40px;
+}
+
+#skills .box {
+    width: 25%;
+    border-radius: 10%;
+    background-color: rgb(58, 9, 118);
+    animation: tomove 3s ease-in-out infinite;
+  }
+
+  #skills #css{
+    animation-delay: .4s;
+  }
+  #skills #js{
+    animation-delay: .8s;
+  }
+  
+  @keyframes tomove {
+    0% {
+      transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+  }
+  
+#skills img{
+    display: block;
+    width: 80%;
+    margin: 30px auto;
+}
+
+#skills p{
+font-size: 24px;
+padding: 10px;
+}
+
+
+
+
+
+
+#services .title{
+    margin: 70px auto;
+    width: max-content;
+    }
+    
+    #services h3{
+        text-align: center;
+        font-size: 70px;
+        font-weight: 700;
+        background: linear-gradient(to top, rgb(77, 10, 148) 20px , white);
+        -webkit-background-clip: text;
+        background-clip: none;
+        color: transparent;
+        opacity: 0.5;
+        transform: translate(0, 25px);
+        font-family: 'Maven Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    }
+    
+    #services h4{
+        text-align: center;
+        font-size: 60px;
+    }
+    
+    #services .line{
+        width: 20%;
+        height: 3px;
+        border-radius: 10px;
+        margin: auto;
+        background-color: var(--main-color);
+    }
+    
+    #services .container{
+    width: 100%;
+    max-width: 2000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    }
+    
+    #services .animation{
+        width: 45%;
+    }
+    
+    
+    #services .text-box-03{
+        width: 45%;
+    }
+    
+    #services h5{
+        font-size: 50px;
+        padding: 10px;
+    }
+    
+    #services p{
+        font-size: 22px;
+        padding: 10px;
+    }
+
+
+
+
+
+
+
+    #contact .title{
+        margin: auto;
+        width: max-content;
+        }
+        
+        #contact h3{
+            text-align: center;
+            font-size: 70px;
+            font-weight: 700;
+            background: linear-gradient(to top, rgb(77, 10, 148) 20px , white);
+            -webkit-background-clip: text;
+            background-clip: none;
+            color: transparent;
+            opacity: 0.5;
+            transform: translate(0, 25px);
+            font-family: 'Maven Pro', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        }
+        
+        #contact h4{
+            text-align: center;
+            font-size: 60px;
+        }
+        
+        #contact .line{
+            width: 20%;
+            height: 3px;
+            border-radius: 10px;
+            margin: auto;
+            background-color: var(--main-color);
+        }
+
+    #contact .container{
+    width: 100%;
+    max-width: 2000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    gap: 40px;
+    }
+
+    #contact .box{
+    width: 25%;
+    background-color: rgb(50, 6, 97);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    transition: .5s;
+    word-break:normal;
+    text-align: center;
+    min-height: 200px;
+    }
+
+    #contact .box:first-child{
+    word-break: break-all;
+    }
+
+    #contact .box:hover{
+        scale: 106%;
+        background-color: rgb(46, 6, 88);
+    }
+
+    #contact a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contact p{
+    padding: 20px;
+    font-size: 15px;
+    }
+
+    #contact svg{
+        padding: 20px;
+    }
+
+
+
+
+
+
+
+    #footer{
+        text-align: center;
+        background-color: rgb(12, 9, 46);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    #footer p{
+        padding: 15px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*media queries*/
+
+
+    @media only screen and (max-width: 1000px){
+
+            header .content{
+                flex-direction: column;
+            }
+
+                
+                header .text-box-01{
+                margin-top: 50px;
+                width: min-content;
+                }
+                
+                header .title{
+                width: max-content;
+                margin: auto;
+                }
+                
+                header h1 {
+                    font-size: 80px;
+                    transform: translate(0, 45px);
+                }
+                
+                header h2{
+                    font-size: 70px;    
+                }
+                
+                header span{
+                    width: max-content;
+                    display: block;
+                    margin: auto;
+                    font-size: 40px;
+                }
+                
+                header p{
+                padding: 20px 20px;
+                font-size: 20px;
+                text-align: center;
+                }
+                
+                
+                header .contact:hover{
+                    scale: 110%;
+                }
+                
+                header .animation{
+                    width: 60%;  
+                }
+
+
+
+                #about{
+                    margin-top: 0;
+                }
+                
+                #about h3{
+                    text-align: center;
+                    font-size: 70px;
+                    font-weight: 700;
+                    background: linear-gradient(to top, rgb(77, 10, 148) 20px , white);
+                    -webkit-background-clip: text;
+                    background-clip: none;
+                    color: transparent;
+                    opacity: 0.5;
+                    transform: translate(0, 35px);
+                    font-family: 'Maven Pro', sans-serif;
+                font-family: 'Open Sans', sans-serif;
+                font-family: 'Roboto', sans-serif;
+                }
+                
+                #about h4{
+                    text-align: center;
+                    font-size: 60px;
+                }
+                
+                #about .line{
+                    width: 20%;
+                    height: 3px;
+                    border-radius: 10px;
+                    margin: auto;
+                    background-color: var(--main-color);
+                }
+                
+                #about .container{
+                width: 100%;
+                max-width: 2000px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 50px auto;
+                }
+                
+                #about .animation{
+                    width: 45%;
+                }
+                
+                #about .text-box-02{
+                    width: 45%;
+                }
+                
+                #about h5{
+                    text-align: center;
+                    font-size: 50px;
+                }
+                
+                #about p{
+                    font-size: 25px;
+                    padding: 20px 30px;
+                }
+
+                #skills .container{
+                    flex-wrap: wrap;
+                    }
+                    
+                    #skills .box {
+                        width: 25%;
+                        min-width: 200px;
+                        border-radius: 10%;
+                        flex-wrap: wrap;
+                        margin: auto;
+                      }
+
+                      #skills p{
+                        font-size: 17px;
+                      }
+
+
+
+
+                      #services .container{
+                        display: block;
+                        }
+
+                    #services .text-box-03{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                    }
+                    
+
+                    
+                     #services h5{
+                        font-size: 18px;
+                        text-align: center;
+                     }
+                     #services p{
+                        font-size: 15px;
+                        text-align: center;
+                     }
+
+                     #services .animation{
+                        margin: auto;
+                        width: 60%;
+                     }
+
+                    
+                      
+
+
+
+
+
+                
+
+            
+        
+
+        
+        
+}
+
+@media only screen and (max-width: 840px){
+    #about .container{
+        flex-direction: column;
+    }
+
+    #about .animation{
+        width: 60%;
+    }
+
+    #about .text-box-02{
+        width: 60%;
+        text-align: center;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 600px){
+
+
+    header h1{
+        font-size: 50px;
+        transform: translateY(24px);
+    }
+    header h2{
+        font-size: 40px;
+    }
+    
+    header span{
+        font-size: 22px;
+    }
+    header p{
+        font-size: 18px;
+    }
+    
+
+    #about h3{
+    font-size: 50px;
+    transform: translateY(24px);
+    }
+
+    #about h4{
+        font-size: 40px;
+    }
+    #skills h3{
+    font-size: 50px;
+    transform: translateY(18px);
+    }
+
+    #skills h4{
+        font-size: 40px;
+        word-break: break-all;
+    }
+    #services h3{
+    font-size: 50px;
+    transform: translateY(18px);
+    }
+
+    #services h4{
+        font-size: 40px;
+    }
+    #contact h3{
+    font-size: 50px;
+    transform: translateY(24px);
+    }
+
+    #contact h4{
+        font-size: 40px;
+    }
+
+    #contact .container{
+        flex-wrap: wrap;
+        }
+        
+        #contact .box {
+            
+            min-width: 150px;
+            border-radius: 10%;
+            flex-wrap: wrap;
+            max-height: 200px;
+          }
+
+    #about .text-box-02{
+        width: 100%;
+    }
+
+    #services .text-box-03{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
